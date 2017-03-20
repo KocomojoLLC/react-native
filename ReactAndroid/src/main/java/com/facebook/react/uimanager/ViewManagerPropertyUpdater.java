@@ -100,7 +100,7 @@ public class ViewManagerPropertyUpdater {
       //noinspection unchecked
       return (T) setterClass.newInstance();
     } catch (ClassNotFoundException e) {
-      FLog.w(TAG, "Could not find generated setter for " + cls);
+//      FLog.w(TAG, "Could not find generated setter for " + cls);
       return null;
     } catch (InstantiationException | IllegalAccessException e) {
       throw new RuntimeException("Unable to instantiate methods getter for " + clsName, e);
